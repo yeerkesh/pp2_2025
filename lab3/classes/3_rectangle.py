@@ -6,6 +6,5 @@ class Rectangle(Shape):
     def area(self):
         return self.length * self.width
 
-# Пример использования
 rect = Rectangle(4, 6)
-print(rect.area())  # Выведет 24
+print(rect.area())
