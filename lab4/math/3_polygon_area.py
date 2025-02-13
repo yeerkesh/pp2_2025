@@ -1,3 +1,5 @@
+import math
+
 def polygon_area(n, s):
     return (n * s**2) / (4 * math.tan(math.pi / n))
 
