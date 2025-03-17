@@ -4,7 +4,6 @@ import os
 pygame.init()
 pygame.mixer.init()
 
-# Создаём окно, чтобы Pygame корректно обрабатывал события
 screen = pygame.display.set_mode((400, 300))
 pygame.display.set_caption("Music Player")
 
@@ -49,6 +48,6 @@ while running:
                 print("B Key Pressed - Previous Track")
                 prev_track()
 
-    pygame.display.update()  # Обновляем окно
+    pygame.display.update()
 
 pygame.quit()
