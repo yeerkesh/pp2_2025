@@ -48,13 +48,13 @@ class Coin(pygame.sprite.Sprite):
         self.image = pygame.image.load("Coin.png")
         self.rect = self.image.get_rect()
         # Тиын кездейсоқ x координатасында, y = 320 болатын жерде пайда болады
-        self.rect.center = (random.randint(40, scr_width - 40), 320)
+        self.rect.center = (random.randint(40, scr_width - 40), 500)
     
     def disappear(self):
         global coinscore
         coinscore += 1
         # Тиын жаңа кездейсоқ x орнына ауысады (y = 320 өзгеріссіз қалады)
-        self.rect.center = (random.randint(40, scr_width - 40), 320)
+        self.rect.center = (random.randint(40, scr_width - 40), 500)
 
 class Player(pygame.sprite.Sprite):
     def __init__(self):
@@ -62,7 +62,7 @@ class Player(pygame.sprite.Sprite):
         self.image = pygame.image.load("Player.png")
         self.rect = self.image.get_rect()
         # Ойыншының бастапқы орны
-        self.rect.center = (60, 320)
+        self.rect.center = (45, 500)
     
     def move(self):
         pressed_keys = pygame.key.get_pressed()
