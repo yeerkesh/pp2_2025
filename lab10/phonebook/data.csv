@@ -1,3 +1,13 @@
-name,phone
-Alice,87001234567
-Bob,87007654321
+import csv
+
+data = [
+    ["Aks", "+7755555555"],
+    ["Roma", "+7788888888"],
+    ["Alih", "+77777777777"]
+]
+
+with open("phonebook.csv", "w", encoding="utf-8", newline="") as file:
+    writer = csv.writer(file)
+    writer.writerows(data)
+
+print("CSV файл 'phonebook.csv' создан!")
